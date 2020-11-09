@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="base.definition"
+		template="/WEB-INF/layouts/classic.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/basefragments/_header2.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/basefragments/_menu2.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/basefragments/_footer.jsp" />
+		<put-attribute name="demo"
+			value="/WEB-INF/bodyfragments/_members.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/_home.jsp" />
+	</definition>
+
+	<!-- ContactUs Page -->
+	<definition name="contactusPage" extends="base.definition">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/_contactus.jsp" />
+	</definition>
+
+	<!-- member Page -->
+	<definition name="memberPage" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/LoginSystem.jsp" />
+	</definition>
+
+	<!-- 14_CRUD Page -->
+	<definition name="14_CRUDPage" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/14/14_CRUDPage.jsp" />
+	</definition>
+
+	<!-- 14_CREAT Page -->
+	<definition name="14_CreatePage" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/14/14_Create.jsp" />
+	</definition>
+
+	<!-- 14_UPDATE Page -->
+	<definition name="14_UpdatePage" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/14/14_Update.jsp" />
+	</definition>
+
+	<definition name="14_showOneProduct"
+		extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/14/14_showOneProduct.jsp" />
+	</definition>
+
+	<!-- 14_UPDATE Page -->
+	<definition name="TableTest" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/14/Table.jsp" />
+	</definition>
+
+	<!-- 35 csr csr (entry) -->
+	<definition name="35/csr/csr" extends="base.definition">
+		<put-attribute name="title" value="csr" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/csr/csr.jsp" />
+	</definition>
+
+	<!-- 35 geo recomAct (entry) -->
+	<definition name="35/geo/recomAct" extends="base.definition">
+		<put-attribute name="title" value="geo" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/geo/recomAct.jsp" />
+	</definition>
+
+	<!-- 35 cms eventSpaceList (entry) -->
+	<definition name="35/cms/eventSpaceList"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/cms/eventSpaceList.jsp" />
+	</definition>
+
+	<!-- 35 cms addData -->
+	<definition name="35/cms/addData" extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/cms/addData.jsp" />
+	</definition>
+
+	<!-- 35 cms addDataResult -->
+	<definition name="35/cms/addDataResult"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/cms/addDataResult.jsp" />
+	</definition>
+
+	<!-- 35 cms eventSpaceSelectResult -->
+	<definition name="35/cms/eventSpaceSelectResult"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/cms/eventSpaceSelectResult.jsp" />
+	</definition>
+
+	<!-- 35 cms editEventSpace -->
+	<definition name="35/cms/editEventSpace"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/cms/editEventSpace.jsp" />
+	</definition>
+
+	<!-- 35 cms editEventSpaceResult -->
+	<definition name="35/cms/editEventSpaceResult"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/cms/editEventSpaceResult.jsp" />
+	</definition>
+
+	<!-- 35 csr listActs -->
+	<definition name="35/csr/listActs" extends="base.definition">
+		<put-attribute name="title" value="csr" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/csr/listActs.jsp" />
+	</definition>
+
+	<!-- 35 csr showKids -->
+	<definition name="35/csr/showKids" extends="base.definition">
+		<put-attribute name="title" value="csr" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/csr/showKids.jsp" />
+	</definition>
+
+	<!-- 35 geo nearAct -->
+	<definition name="35/geo/nearAct" extends="base.definition">
+		<put-attribute name="title" value="geo" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/35/geo/nearAct.jsp" />
+	</definition>
+
+	<!-- _11_SA Show_SA -->
+	<definition name="_11_SA/Show_SA" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/Show_SA.jsp" />
+	</definition>
+
+	<!-- _11_SA NewSA -->
+	<definition name="_11_SA/NewSA" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/NewSA.jsp" />
+	</definition>
+
+	<!-- _11_SA DelSA -->
+	<definition name="_11_SA/DelSA" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/DelSA.jsp" />
+	</definition>
+
+	<!-- _11_SA SearchSA -->
+	<definition name="_11_SA/SearchSA" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/SearchSA.jsp" />
+	</definition>
+
+	<!-- _11_SA SearchReturn -->
+	<definition name="_11_SA/SearchReturn"
+		extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/SearchReturn.jsp" />
+	</definition>
+
+	<!-- _11_SA FixSA -->
+	<definition name="_11_SA/FixSA" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/FixSA.jsp" />
+	</definition>
+
+	<!-- _11_SA Error -->
+	<definition name="_11_SA/Error" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/Error.jsp" />
+	</definition>
+
+	<!-- _11_SA Success -->
+	<definition name="_11_SA/Success" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/_11_SA/Success.jsp" />
+	</definition>
+
+	<definition name="04_index" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/04/index_back.jsp" />
+	</definition>
+
+	<definition name="04_categorySearch"
+		extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/04/categorySearch.jsp" />
+	</definition>
+
+	<definition name="04_SearchAll" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/04/SearchAll.jsp" />
+	</definition>
+
+	<definition name="04_Insert" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/04/InsertAction.jsp" />
+	</definition>
+
+	<definition name="04_Update" extends="base.definition">
+		<put-attribute name="title" value="member" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/04/UpdateAction.jsp" />
+	</definition>
+	
+	<!-- 18 selectAll -->
+	<definition name="18_selectALL" extends="base.definition">
+		<put-attribute name="title" value="123" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/18/DemoSelectAll.jsp" />
+	</definition>
+	
+	<!-- 18 insert -->
+	<definition name="18_insert" extends="base.definition">
+		<put-attribute name="title" value="123" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/18/18_Insert.jsp" />
+	</definition>
+	
+	<!-- 18 delete -->
+	<definition name="18_Delete" extends="base.definition">
+		<put-attribute name="title" value="123" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/18/18_Delete.jsp" />
+	</definition>
+	
+	<!-- 18 update -->
+	<definition name="18_Update" extends="base.definition">
+		<put-attribute name="title" value="123" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/18/18_Update.jsp" />
+	</definition>
+	
+		<!-- 03 cms shop index -->
+	<definition name="03/cms/shop/index"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/index.jsp" />
+	</definition>
+
+	<!-- 03 cms shop create -->
+	<definition name="03/cms/shop/create"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/create.jsp" />
+	</definition>
+
+	<!-- 03 cms shop create_return -->
+	<definition name="03/cms/shop/create_return"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/create_return.jsp" />
+	</definition>
+
+	<!-- 03 cms shop search -->
+	<definition name="03/cms/shop/search"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/search.jsp" />
+	</definition>
+
+	<!-- 03 cms shop search_return -->
+	<definition name="03/cms/shop/search_return"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/search_return.jsp" />
+	</definition>
+
+	<!-- 03 cms shop update -->
+	<definition name="03/cms/shop/update"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/update.jsp" />
+	</definition>
+
+	<!-- 03 cms shop update_by_name -->
+	<definition name="03/cms/shop/update_by_name"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/update_by_name.jsp" />
+	</definition>
+
+	<!-- 03 cms shop update_confirm -->
+	<definition name="03/cms/shop/update_confirm"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/update_confirm" />
+	</definition>
+
+	<!-- 03 cms shop update_return -->
+	<definition name="03/cms/shop/update_return"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/update_return" />
+	</definition>
+
+	<!-- 03 cms shop delete -->
+	<definition name="03/cms/shop/delete"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/delete.jsp" />
+	</definition>
+
+	<!-- 03 cms shop delete_confirm -->
+	<definition name="03/cms/shop/delete_confirm"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/delete_confirm.jsp" />
+	</definition>
+
+	<!-- 03 cms shop delete_return -->
+	<definition name="03/cms/shop/delete_return"
+		extends="base.definition">
+		<put-attribute name="title" value="cms" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/03/cms/shop/delete_return.jsp" />
+	</definition>
+
+</tiles-definitions>
