@@ -27,13 +27,21 @@ public class SeatCrud {
 	private SeatBeanService seatBeanService;
 	
 	//search seat
+//	@RequestMapping(path = "/04/seatSearch.ctrl", method = RequestMethod.GET)
 //	@ResponseBody 
+//	public Object seatSearch(Model model) {
+//		int actno = 1;
+//		Map<String, Integer>seatMap=seatBeanService.select(actno);
+//		System.out.println(seatMap);
+//			return seatMap;
+//	}
+	
 	@RequestMapping(path = "/04/seatSearch.ctrl", method = RequestMethod.GET)
-	public @ResponseBody  Map<String, Integer> seatSearch(Model model) {
+	public String seatSearch(Model model) {
 		int actno = 1;
-			Map<String, Integer>seatMap=seatBeanService.select(actno);
-//			model.addAttribute(seatMap);
+		Map<String, Integer>seatMap=seatBeanService.select(actno);
 		System.out.println(seatMap);
-			return seatMap;
+		model.addAttribute("seat", seatMap);
+		return "04/fromt_Seat/Seat";
 	}
 }
