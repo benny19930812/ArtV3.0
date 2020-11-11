@@ -72,7 +72,7 @@ public class CRUDCtrl {
 			
 		}
 
-		return "04/SearchAll";
+		return "04/front_saleTicket/SearchAll";
 	}
 	
 	
@@ -144,7 +144,7 @@ public class CRUDCtrl {
 		System.out.println("共" + listsize + "筆資料");
 
 
-		return "04/front/_04_ST/04_select";
+		return "04/front_saleTicket/04_select";
 	}
 	//分類查詢
 	@RequestMapping(path = "/04/CategorySearch.ctrl", method = RequestMethod.GET)
@@ -215,7 +215,7 @@ public class CRUDCtrl {
 		int listsize = list.size();
 		System.out.println("共" + listsize + "筆資料");
 
-		return "04/front/_04_ST/04_select";
+		return "04/front_saleTicket/04_select";
 	}
 	
 	//開始日期查詢
@@ -307,7 +307,7 @@ public class CRUDCtrl {
 		int listsize = list.size();
 		System.out.println("共" + listsize + "筆資料");
 
-		return "04/front/_04_ST/04_select";
+		return "04/front_saleTicket/04_select";
 	}
 	
 	
@@ -395,7 +395,7 @@ public class CRUDCtrl {
 			int listsize = list.size();
 			System.out.println("共" + listsize + "筆資料");
 
-			return "04/front/_04_ST/04_select";
+			return "04/front_saleTicket/04_select";
 		}
 		
 		

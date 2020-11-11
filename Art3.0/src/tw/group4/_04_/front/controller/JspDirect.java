@@ -22,4 +22,10 @@ public class JspDirect {
 		
 		return "/04/front/_04_ST/04_Booking";
 	}
+	
+	@RequestMapping(path = "/04/index", method = RequestMethod.GET)
+	public String processShowindex( ) {
+
+		return "/04/front_saleTicket/index_front";
+	}
 }
