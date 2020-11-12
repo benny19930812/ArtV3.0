@@ -29,16 +29,17 @@
 			class="fa fa-tachometer" aria-hidden="true"></i> <span
 			style="font-size: medium;">主控台</span></a></li>
 
+<!-- 	<!-- Divider --> 
+<!-- 	<hr class="sidebar-divider"> -->
+
+	
 	<!-- Divider -->
 	<hr class="sidebar-divider">
 
 	<!-- Heading -->
 	<div class="sidebar-heading">
-		<h5>企業會員功能列表</h5>
+		<h5>功能列表</h5>
 	</div>
-
-
-
 	<!-- Nav Item - Utilities Collapse Menu -->
 	<li class="nav-item"><a class="nav-link collapsed" href="#"
 		data-toggle="collapse" data-target="#collapseUtilities"
@@ -49,36 +50,14 @@
 			aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">藝文活動服務:</h6>
-				<a class="collapse-item"
-					href="<c:url value='/tilesNavbar/35/cms' />">修改租借場地資訊</a> <a
-					class="collapse-item" href="<c:url value='/tilesNavbar/35/geo' />">查詢最近場地</a>
-<%-- 				<a class="collapse-item" href="<c:url value='/tilesNavbar/35/geo' />">租借藝文活動場地</a> --%>
-					<a class="collapse-item" href="<c:url value='/tilesNavbar/35/csr' />">查詢企業社會責任資訊</a>
+				<a class="collapse-item" href="<c:url value='' />">修改租借場地資訊</a> 
+				<a class="collapse-item" href="<c:url value='' />">修改贊助活動資訊</a>
 			</div>
 		</div></li>
 
-	<!-- Nav Item - Pages Collapse Menu -->
-	<li class="nav-item"><a class="nav-link collapsed" href="#"
-		data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-		aria-controls="collapseTwo"> <i class="fas fa-hand-holding-usd"></i>
-			<span>贊助專區</span>
-	</a>
-		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-			data-parent="#accordionSidebar">
-			<div class="bg-white py-2 collapse-inner rounded">
-				<h6 class="collapse-header">贊助服務一覽:</h6>
-				<a class="collapse-item" href="#">搜尋需贊助對象</a> <a
-					class="collapse-item" href="#">金流服務</a>
-			</div>
-		</div></li>
 
-	<!-- Divider -->
-	<hr class="sidebar-divider">
 
-	<!-- Heading -->
-	<div class="sidebar-heading">
-		<h5>一般會員功能列表</h5>
-	</div>
+
 
 	<!-- Nav Item - 一般功能 Menu -->
 	<!-- 票務相關 -->
@@ -90,13 +69,14 @@
 		<div id="collapsePages" class="collapse"
 			aria-labelledby="headingPages" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<h6 class="collapse-header">我是買家:</h6>
-				<a class="collapse-item" href="#">票務購物車</a> <a class="collapse-item"
-					href="#">購票紀錄</a>
 				<div class="collapse-divider"></div>
-				<h6 class="collapse-header">我是賣家:</h6>
+				<h6 class="collapse-header">活動修改:</h6>
 				<a class="collapse-item" href="<c:url value='/04/index_back' />">活動查詢</a>
 				<a class="collapse-item" href="<c:url value='/04/CMS/insert' />">活動新增</a>
+				<a class="collapse-item" href="<c:url value='/04/index_back' />">活動下架</a>
+				<h6 class="collapse-header">票務修改:</h6>
+				<a class="collapse-item" href="<c:url value='' />">票券訂單查詢</a>
+				<a class="collapse-item" href="<c:url value='' />">票券訂單刪除</a>
 			</div>
 		</div></li>
 
@@ -109,11 +89,11 @@
 		<div id="collapsePages2" class="collapse"
 			aria-labelledby="headingPages" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<h6 class="collapse-header">我是買家:</h6>
-				<a class="collapse-item" href="#">商城購物車</a> <a class="collapse-item"
-					href="#">購物紀錄</a> <a class="collapse-item" href="#">猜我喜歡</a>
+				<h6 class="collapse-header">訂單修改:</h6>
+				<a class="collapse-item" href="#">訂單刪除</a> <a class="collapse-item"
+					href="#">訂單編輯</a>
 				<div class="collapse-divider"></div>
-				<h6 class="collapse-header">我是賣家:</h6>
+				<h6 class="collapse-header">商品編輯:</h6>
 				<a class="collapse-item" href="<c:url value='/14/Create.ctrl' />">商品上架</a>
 				<a class="collapse-item" href="<c:url value='/14/CRUD.ctrl' />">商品下架</a>
 				<a class="collapse-item"
@@ -153,10 +133,10 @@
 				<a class="collapse-item"
 					href="<c:url value='/myStreetArtistPage.ctrl'/>">總覽</a> <a
 					class="collapse-item" href="<c:url value='/GoSearch'/>">搜尋</a>
-				<div class="collapse-divider"></div>
-				<h6 class="collapse-header">我是藝人:</h6>
 				<a class="collapse-item" href="<c:url value='/GoCreate'/>">藝人上架</a>
 				<a class="collapse-item" href="<c:url value='/GoDel'/>">藝人下架</a>
+				<div class="collapse-divider"></div>
+				
 			</div>
 		</div></li>
 
