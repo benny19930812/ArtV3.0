@@ -41,7 +41,6 @@
 <body>
 <form name="order2" action="<c:url value='/_04_ST/04_Booking2.jsp'/> " method="get">
 
-	<jsp:include page="/fragment/top.jsp" />
 <%-- <c:set var="add" value="${param.add}" scope="session"/>  --%>
 <div class="container">   
     <H1>購物車</H1>

@@ -141,6 +141,111 @@ private DataSource dataSource;
 				e.printStackTrace();
 			}
 		}
+		
+		//創Seat表格
+		public void createTableSeat() {
+			
+			try (Connection  connection = getDataSource().getConnection();) {
+				Statement stmt = connection.createStatement();
+				
+			    String sql = "CREATE TABLE SEAT("+
+			    		"ACT_NO NUMBER NOT NULL ENABLE," + 
+			    		"ACT_TITLE VARCHAR2(1000),"+ 
+			    		"A1 NUMBER,"+ 
+			    		"A2 NUMBER,"+ 
+			    		"A3 NUMBER,"+ 
+			    		"A4 NUMBER,"+ 
+			    		"A5 NUMBER,"+ 
+			    		"A6 NUMBER,"+ 
+			    		"A7 NUMBER,"+ 
+			    		"A8 NUMBER,"+ 
+			    		"A9 NUMBER,"+ 
+			    		"A10 NUMBER,"+ 
+			    		"B1 NUMBER,"+ 
+			    		"B2 NUMBER,"+ 
+			    		"B3 NUMBER,"+ 
+			    		"B4 NUMBER,"+ 
+			    		"B5 NUMBER,"+ 
+			    		"B6 NUMBER,"+ 
+			    		"B7 NUMBER,"+ 
+			    		"B8 NUMBER,"+ 
+			    		"B9 NUMBER,"+ 
+			    		"B10 NUMBER,"+ 
+			    		"C1 NUMBER,"+ 
+			    		"C2 NUMBER,"+ 
+			    		"C3 NUMBER,"+ 
+			    		"C4 NUMBER,"+ 
+			    		"C5 NUMBER,"+ 
+			    		"C6 NUMBER,"+ 
+			    		"C7 NUMBER,"+ 
+			    		"C8 NUMBER,"+ 
+			    		"C9 NUMBER,"+ 
+			    		"C10 NUMBER,"+ 
+			    		"D1 NUMBER,"+ 
+			    		"D2 NUMBER,"+ 
+			    		"D3 NUMBER,"+ 
+			    		"D4 NUMBER,"+ 
+			    		"D5 NUMBER,"+ 
+			    		"D6 NUMBER,"+ 
+			    		"D7 NUMBER,"+ 
+			    		"D8 NUMBER,"+ 
+			    		"D9 NUMBER,"+ 
+			    		"D10 NUMBER,"+ 
+			    		"E1 NUMBER,"+ 
+			    		"E2 NUMBER,"+ 
+			    		"E3 NUMBER,"+ 
+			    		"E4 NUMBER,"+ 
+			    		"E5 NUMBER,"+ 
+			    		"E6 NUMBER,"+ 
+			    		"E7 NUMBER,"+ 
+			    		"E8 NUMBER,"+ 
+			    		"E9 NUMBER,"+ 
+			    		"E10 NUMBER,"+ 
+			    		"CONSTRAINT SEAT_PK PRIMARY KEY (ACT_NO))";
+			  
+			    stmt.executeUpdate(sql);
+			 
+			    System.out.println("SEAT表格已建立");
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		//刪Seat表格
+		public void dropTableseat() {
+			
+			try (Connection connection = getDataSource().getConnection();) {
+				Statement stmt = connection.createStatement();
+				
+			    String sql = "DROP TABLE SEAT CASCADE CONSTRAINTS";
+		    
+			    stmt.executeUpdate(sql);
+			    System.out.println("SEAT表格已刪除");
+
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		//插入Seat表格
+				public void InsertTableseat() {
+					
+					try (Connection connection = getDataSource().getConnection();) {
+						Statement stmt = connection.createStatement();
+						
+						String sql = "INSERT INTO SEAT (ACT_NO,ACT_TITLE) SELECT ACT_NO,ACT_TITLE FROM MAINTABLE";				    
+					    stmt.executeUpdate(sql);
+					    System.out.println("SEAT表格已插入");
+
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+				}
+		
+		
+		
+		
 	
 		public ArrayList<MainTable> readJsonToMT() {
 			
