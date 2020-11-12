@@ -9,7 +9,6 @@
 </head>
 <body>
 	<%-- <form name="order" action="<c:url value='/_04_Orderlist/OrIdSearchServlet'/>" method="get" > --%>
-		<jsp:include page="/fragment/top.jsp" />
 		<c:set var="getorlist" value="${requestScope.getorlist}" />
 		
 		<%--使用JSTL 執行for loop ${show.no}取map內value --%>

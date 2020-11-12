@@ -9,7 +9,6 @@
 <body>
 <%-- <form name="order" action="<c:url value='/_04_Orderlist/OrIdSearchServlet'/>" method="get" > --%>
 <form name="order" action="./OrIdSearchServlet" method="get" >
-<jsp:include page="/fragment/top.jsp" />
 <div class="container">
 <P><P><P><P>
 <div class="text-center">

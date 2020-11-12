@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.sql.Blob;
 import java.util.List;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

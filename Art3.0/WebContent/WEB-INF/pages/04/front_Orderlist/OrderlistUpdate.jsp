@@ -10,7 +10,6 @@
 </head>
 <body>
 <form method=GET action="<c:url value='/_04_Orderlist/OrderlistUpdate'/>"> 
-	<jsp:include page="/fragment/top.jsp" />
 <div class="container">
 <p></p>
 <br><h1>修改訂單</h1>
