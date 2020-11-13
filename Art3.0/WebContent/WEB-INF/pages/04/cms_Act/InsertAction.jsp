@@ -28,8 +28,8 @@
 				</tr>
 				<tr>
 					<td>分類</td>
-					<td><select id="category" class="form-control" name="category"  >
-							<option value="15" selected>選擇分類</option>
+					<td><select id="category" class="form-control" name="category" required="required" >
+							<option value="" selected>選擇分類</option>
 							<option value="1">音樂</option>
 							<option value="2">戲劇</option>
 							<option value="3">舞蹈</option>
@@ -49,8 +49,8 @@
 				</tr>
 				<tr>
 					<td>縣市名</td>
-					<td><select id="site"  name="location" class="form-control" >
-							<option value="台北" selected>選擇地區</option>
+					<td><select id="site"  name="location" class="form-control" required="required">
+							<option value="" selected>選擇地區</option>
 							<option value="">==北部地區==</option>
 							<option value="基隆">基隆</option>
 							<option value="台北">台北</option>

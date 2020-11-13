@@ -73,6 +73,7 @@
 	<tr id="selectseattr" >
 		<td>已選擇的排號資訊 </td>
 		<td id="selectseat"></td>
+		<input type="hidden" value="" id=""/>
 	</tr>
 	<tr>
 		<td>已選擇座位數量</td>
@@ -171,49 +172,66 @@
 
  	    //點擊更換圖片 利用圖片src的value來判斷 		
  	    $(".sofa").mouseover(function() {
+ 	 	    //顯示選取框
 			$(this).css("border-color", "#FFAC55");
+			//顯示已選座位數量
+			$("#showseat").text($(this).attr('id'));
  		}).mouseout(function() {
+ 			//隱藏選取框
  			$(this).css("border-color", "#FFFFFF")
  		}).click(function() {
  			if ($(this).attr("src") == "<c:url value='/images/04/sofaOff.png' />") {
- 				$(this).attr("src", "<c:url value='/images/04/sofaTick.png' />")
- 				$(this).attr("class","sofatick")
+ 	 			//換成選取座位圖
+ 				$(this).attr("src", "<c:url value='/images/04/sofaTick.png' />")				
+ 				$("#selectseat").append("<td class='seat' id='td"+$(this).attr('id')+"'>"+$(this).attr('id')+"<td>");
+ 				$("#selectnum").text($(".seat").length);
  			} else {
+ 	 			//換回空位
+ 	 			var id ="td"+$(this).attr('id');
  				$(this).attr("src", "<c:url value='/images/04/sofaOff.png' />")
+//   				$("td").remove("#"+id);
+ 				$("#"+id).remove();
+ 				$("#selectnum").text($(".seat").length);
  			}
  		});    
 		
- 	   $(".sofatick").mouseover(function() {
-			$(this).css("border-color", "#FFAC55");
-		}).mouseout(function() {
-			$(this).css("border-color", "#FFFFFF")
-		}).click(function() {
-				$(this).attr("src", "<c:url value='/images/04/sofaOff.png' />")
-				$(this).attr("class","sofa")
-		});    
+//  	   $(".sofatick").mouseover(function() {
+// 			$(this).css("border-color", "#FFAC55");
+// 		}).mouseout(function() {
+// 			$(this).css("border-color", "#FFFFFF")
+// 		}).click(function() {
+// 			$("td").remove(".seat");
+// 			$("#selectseat").empty("#tdA5");
+//  			$(".seat").remove();
+//  				$("#selectnum").text($(".seat").length);
+// 				$(this).attr("src", "<c:url value='/images/04/sofaOff.png' />")
+// 				$(this).attr("class","sofa")
+// 		});    
  
 			//游標移至圖片顯示座位名
-			$('.sofa').each(function() {
-				$(this).mouseover(function() {
-					$("#showseat").text($(this).attr('id'));
-				});
-			});
+// 			$('.sofa').each(function() {
+// 				$(this).mouseover(function() {
+// 					$("#showseat").text($(this).attr('id'));
+// 				});
+// 			});
 			//顯示選取座位名
-				$(".sofa").click(function() {
-					if ($(this).attr("src") == "<c:url value='/images/04/sofaTick.png' />") {
-					$("#selectseat").append("<td class='seat' id=td"+$(this).attr('id')+">"+$(this).attr('id')+"<td>");
-					$("#selectnum").text($(".seat").length);
-		 			}else {
-		 			$(".seatid").remove();
-		 			}
-				});
+// 				$(".sofa").click(function() {
+// 					if ($(this).attr("src") == "<c:url value='/images/04/sofaTick.png' />") {
+// 					$("#selectseat").append("<td class='seat' id='tdA5'>"+$(this).attr('id')+"<td>");
+// // 					$("#selectseat").append("<td class='seat' id=td"+$(this).attr('id')+">"+$(this).attr('id')+"<td>");
+// 					$("#selectnum").text($(".seat").length);
+// 		 			}else {
+// 		 			$(".seatid").remove();
+// 		 			}
+// 				});
 				
-				$(".sofatick").click(function() {
-				var id =$(this).attr('id');			
-				$(".selectseattr").empty();
-		 			$("#selectnum").text($(".seat").length);
-		 			
-				});
+// 				$(".sofatick").click(function() {
+// 				var $id =$(this).attr('id');			
+// 					$(".seat").empty("#tdA5");
+// 					$(".seat").remove();
+// 		 			$("#selectnum").text($(".seat").length);
+			
+// 				});
 
 		</script> 
 <script>
