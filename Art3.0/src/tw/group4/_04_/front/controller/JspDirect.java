@@ -28,4 +28,20 @@ public class JspDirect {
 
 		return "/04/front_saleTicket/index_front";
 	}
+	
+	@RequestMapping(path = "/04/booking.ctrl", method = RequestMethod.GET)
+	public String processbookingnum( ) {
+
+		return "/04/front_saleTicket/Booking";
+	}
+	@RequestMapping(path = "/04/booking2.ctrl", method = RequestMethod.GET)
+	public String processbookingname( ) {
+
+		return "/04/front_saleTicket/Booking2.ctrl";
+	}
+	@RequestMapping(path = "/04/booking3.ctrl", method = RequestMethod.GET)
+	public String processbookingdetail( ) {
+
+		return "/04/front_saleTicket/Booking3";
+	}
 }

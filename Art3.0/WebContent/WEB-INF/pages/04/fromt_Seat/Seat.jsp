@@ -160,7 +160,9 @@
 			<td><img src="<c:url value='/images/04/sofaTick.png' />" alt="" title=""class="sofademo">已加入購物車</td>
 		</tr>
 	</table>
-	
+	<form name="order" action="<c:url value='/04/booking.ctrl'/>" method="get">
+	<br><br><input type="submit" class="btn btn-info" value="下一步">
+	</form>
 </div>	
 	
 <script src="https://code.jquery.com/jquery-3.5.1.js"
@@ -185,6 +187,9 @@
  				$(this).attr("src", "<c:url value='/images/04/sofaTick.png' />")				
  				$("#selectseat").append("<td class='seat' id='td"+$(this).attr('id')+"'>"+$(this).attr('id')+"<td>");
  				$("#selectnum").text($(".seat").length);
+ 				if ($(".seat").length ==5) {
+ 					alert("最多選擇五個座位");
+				}
  			} else {
  	 			//換回空位
  	 			var id ="td"+$(this).attr('id');
