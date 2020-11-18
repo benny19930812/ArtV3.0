@@ -160,8 +160,8 @@
 			<td><img src="<c:url value='/images/04/sofaTick.png' />" alt="" title=""class="sofademo">已加入購物車</td>
 		</tr>
 	</table>
-	<form name="order" action="<c:url value='/04/booking.ctrl'/>" method="get">
-	<br><br><input type="submit" class="btn btn-info" value="下一步">
+	<form name="order" action="<c:url value='/04/booking'/>" method="get">
+	<br><br><input type="submit" class="btn btn-outline-info" value="下一步">
 	</form>
 </div>	
 	

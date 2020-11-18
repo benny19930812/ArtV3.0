@@ -13,7 +13,7 @@ import tw.group4._04_.front.qrcode.QRCodeTool;
 public class QRCodeToolTest {
 	public static void main(String[] args) throws WriterException, IOException, NotFoundException {
 // 二維碼字串
-		String qrCodeData = "QRCODE測試!!!!";
+		String qrCodeData = "https://www.google.com/";
 // 二維碼名稱
 		String filePath = "QRCode.png";
 // 字元編碼

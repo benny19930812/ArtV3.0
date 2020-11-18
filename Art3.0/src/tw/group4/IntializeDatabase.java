@@ -13,7 +13,7 @@ public class IntializeDatabase {
 		
 //		全部執行完畢需時30-60秒
 		new ExecuteCreateTable03().execute03();
-		new CreateTable().execute04();
+//		new CreateTable().execute04();
 		new createTableSA().execute11();
 		new APTableReset().execute14();
 		new TestOnly().execute18();

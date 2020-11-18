@@ -41,6 +41,14 @@ td {
 	width: 200px;
 }
 </style>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -77,7 +85,7 @@ td {
 
 
 	<form name="order"
-		action="<c:url value='/04/booking2.ctrl'/>" method="get">
+		action="<c:url value='/04/booking2'/>" method="get">
 
 		<!-- 用param.取，相當於request.getParameter-->
 		<c:set var="title" value="${param.title}" scope="session" />
@@ -106,7 +114,7 @@ td {
 				<td><input type="button" value="-" name="minus" class=""
 					id="minus"> 
 					<input type="text" name="adultnum"
-					id="adultnum" class="adultnum" value=""> 
+					id="adultnum" class="adultnum" value="" readonly="readonly"> 
 					<input type="button" value="+" name="plus" class="" id="plus">
 				</td>
 
@@ -121,9 +129,9 @@ td {
 				<td><input type="button" value="-" name="minus2" class=""
 					id="minus2"> <!-- <P name="orderNum" id="orderNum" class="orderNum"></P> -->
 					<input type="text" name="halfnum" id="halfnum" class="halfnum"
-					value=""> 
+					value="" readonly="readonly"> 
 					<input type="button" value="+" name="plus2"
-					class="" id="plus2"></td>
+					class="" id="plus2" ></td>
 				<td name="price" class="price" id="price">NT$500</td>
 				<td>NT$ <input type="text" name="total2" id="total2"
 					class="total2" value="0" readonly="readonly" />
